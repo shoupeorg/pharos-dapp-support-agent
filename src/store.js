@@ -1,0 +1,3 @@
+export async function saveReport(db,report){await db.prepare("INSERT INTO reports (id, tx_hash, outcome, confidence, source, report_json, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)").bind(report.id,report.requestedHash,report.outcome,report.confidence,report.source,JSON.stringify(report),report.createdAt).run();return report}
+export async function getReport(db,id){const row=await db.prepare("SELECT report_json FROM reports WHERE id = ?").bind(id).first();return row?JSON.parse(row.report_json):null}
+export async function listReports(db){const out=await db.prepare("SELECT report_json FROM reports ORDER BY created_at DESC LIMIT 20").all();return(out.results||[]).map(x=>JSON.parse(x.report_json))}

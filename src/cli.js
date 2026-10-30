@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+import{analyzeLive}from"./mcp.js";const hash=process.argv[2];if(!hash){console.error("Usage: pharos-support <transaction-hash>");process.exit(2)}try{console.log(JSON.stringify(await analyzeLive(hash),null,2))}catch(error){console.error(error.message);process.exit(1)}

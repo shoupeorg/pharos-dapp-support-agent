@@ -1,0 +1,29 @@
+{
+  "evidenceVersion": "1.0.0",
+  "engineVersion": "dapp-support/1.0.0",
+  "source": "Official Pharos Chain MCP",
+  "createdAt": "2026-10-30T10:37:16.315Z",
+  "records": [
+    {
+      "id": "slippage",
+      "reportId": "20357479-040e-4204-9d3f-d075dfda3665",
+      "outcome": "FAILED",
+      "diagnosisCode": "SLIPPAGE_GUARD",
+      "confidence": "INDICATED"
+    },
+    {
+      "id": "zero-balance",
+      "reportId": "976316f0-2193-4d8d-acf5-db77eb27b4a8",
+      "outcome": "FAILED",
+      "diagnosisCode": "ZERO_INPUT_TOKEN_BALANCE",
+      "confidence": "INDICATED"
+    },
+    {
+      "id": "invariant",
+      "reportId": "edd0a847-9b93-4dbf-992a-f8ea29e70090",
+      "outcome": "FAILED",
+      "diagnosisCode": "APPLICATION_INVARIANT",
+      "confidence": "INDICATED"
+    }
+  ]
+}
