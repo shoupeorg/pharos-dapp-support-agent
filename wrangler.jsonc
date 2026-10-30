@@ -1,1 +1,32 @@
-{"name":"pharos-dapp-support-agent","main":"worker.js","compatibility_date":"2026-10-30","compatibility_flags":["nodejs_compat"],"workers_dev":true,"assets":{"directory":"./public","binding":"ASSETS","run_worker_first":["/api/*"]},"d1_databases":[{"binding":"DB","database_name":"pharos-dapp-support-agent","database_id":"REPLACE_WITH_D1_ID","migrations_dir":"migrations"}],"observability":{"enabled":true}}
+{
+    "name":  "pharos-dapp-support-agent",
+    "main":  "worker.js",
+    "compatibility_date":  "2026-10-30",
+    "compatibility_flags":  [
+                                "nodejs_compat"
+                            ],
+    "workers_dev":  true,
+    "assets":  {
+                   "directory":  "./public",
+                   "binding":  "ASSETS",
+                   "run_worker_first":  [
+                                            "/api/*"
+                                        ]
+               },
+    "d1_databases":  [
+                         {
+                             "binding":  "DB",
+                             "database_name":  "pharos-dapp-support-agent",
+                             "database_id":  "7cc68f7b-dd68-489d-987d-e2b7d82104f1",
+                             "migrations_dir":  "migrations"
+                         },
+                         {
+                             "binding":  "_BD",
+                             "database_name":  "pharos-dapp-support-agent",
+                             "database_id":  "7cc68f7b-dd68-489d-987d-e2b7d82104f1"
+                         }
+                     ],
+    "observability":  {
+                          "enabled":  true
+                      }
+}

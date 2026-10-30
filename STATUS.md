@@ -16,3 +16,9 @@
 ## Safety
 
 No wallet was connected. No signing, approval, transaction preparation, broadcast or blockchain spending occurred.
+## Published deployment
+
+- Demo: https://pharos-dapp-support-agent.shoupeorg.workers.dev
+- Cloudflare version: 92ebfaa8-7f43-448d-bb66-1139ac31c0c0
+- D1 database: pharos-dapp-support-agent (7cc68f7b-dd68-489d-987d-e2b7d82104f1)
+- Public UI, assets, API, three real analyses, D1 persistence, exports and explorer pages verified.
